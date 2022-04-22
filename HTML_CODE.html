@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="CSS_CODE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <h3>IRCTC</h3>
+        </div>
+        <ul>
+            <li class="item"><button><a href="">Home</a></button></li>
+            <li class="item"><button><a href="">Meals</a></button></li>
+            <li class="item-3"><button><a href="">Holiday Packages</a></button></li>
+            <li class="item-3"><button><a href="">Services at Station</a></button></li>
+            <li class="item-3"><button><a href="">Contact Us</a></button></li>
+        </ul>
+    </nav>
+    <div class="grid-container">
+        <div class="reservation">
+            <form action="">
+                <h2>BOOK YOUR TICKET HERE</h2>
+                <input type="text" placeholder="From">
+                <p class="arrow">&uarr;&darr;</p>
+                <input type="text" placeholder="To">
+                <input type="date">
+                <select name="class_type" id="class_type" required>
+                    <option value="All Classes" selected>All Classes</option>
+                    <option value="Second Sitting">Second Sitting</option>
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="AC 3 Tier">AC 3 Tier</option>
+                    <option value="AC 2 Tier">AC 2 Tier</option>
+                    <option value="AC 1st Class">AC 1st Class</option>
+                </select>
+                <p><input type="submit" value="Find Trains"></p>
+            </form>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="img1" src="Platform2.jpg" style="width:100%">
+                <div class="text">Clean Platform</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="img2" src="Platform1.jpg" style="width:100%">
+                <div class="text">Train Arrived at Platform</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Image5.webp" alt="" style="width:100%">
+                <div class="text">Passengers Reaching At There Destination</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    </div>
+
+    <h1 class="holiday center">HOLIDAYS</h1>
+    <section id="offer">
+        <div class="offer1">
+            <h3 class="heading center">TOURIST TRAINS</h3>
+            <ul>
+                <li class="toursit">&rarr; Maharaja's Express</li>
+                <li class="toursit">&rarr; Bharatdarshan Tourist Train</li>
+                <li class="toursit">&rarr; Duddhist Circuit Tourist Train</li>
+                <li class="toursit">&rarr; Palace on Wheels</li>
+                <li class="toursit">&rarr; The Deccan Odyssey</li>
+                <li class="toursit">&rarr; Golden Chariot</li>
+                <li class="toursit">&rarr; Royal Rajasthan on Wheeels</li>
+                <li class="toursit">&rarr; Royal Orient Train</li>
+                <li class="toursit">&rarr; Fairy Queen Express</li>
+                <li class="toursit">&rarr; Humsafar</li>
+            </ul>
+        </div>
+
+        <div class="offer2 flex">
+            <h3 class="heading center">INTERNATIONAL PACKAGES</h3>
+            <ul>
+                <li class="international">&rarr; Samjhauta Express(146007) - from Amritsar to Lahore</li>
+                <li class="international">&rarr; Matree Express - Kolkata to Dhaka</li>
+                <li class="international">&rarr; Bandhan Express - Kolkata to Khulna Railway Station</li>
+                <li class="international">&rarr; Thar Link Express - Jodhpur to Karachi</li>
+            </ul>
+        </div>
+
+        <div class="offer3 flex">
+            <h3 class="heading center">NATIONAL PACKAGES</h3>
+            <ul>
+                <li class="national">&rarr; Lucknow to Manali</li>
+                <li class="national">( On 3 AC tickets of adult 1 ticket of child is free )</li>
+                <li class="national">&rarr; Bharat Darshan Train DLH to SRI NGR</li>
+                <li class="national">( On 6 AC tickets of adult 2 ticket of childre are free )</li>
+                <li class="national">&rarr; Mumbai to Manali </li>
+                <li class="national">( On 4 AC tickets of adult 1 ticket of child is free )</li>
+            </ul>
+        </div>
+    </section>
+    <script src="JavaScript_code.js"></script>
+</body>
+
+</html>
